@@ -67,18 +67,6 @@ form .input-field:first-child {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.input-field .underline::after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    bottom: -5px;
-    left: 0;
-    background: linear-gradient(45deg, #e22d2d, #e09200);
-    transform: scaleX(0);
-    transition: all .3s ease-in-out;
-    transform-origin: left;
-}
 
 .input-field input:focus ~ .underline::after {
     transform: scaleX(1);
@@ -95,7 +83,11 @@ form .input-field:first-child {
     color: rgba(0, 0, 0, 0.5);
 }
 
-form input[type="submit"] {
+input:invalid{
+    
+  }
+
+.botao1 {
     margin-top: 2rem;
     padding: 0.4rem;
     width: 100%;
@@ -108,7 +100,7 @@ form input[type="submit"] {
     transition: all 0.3s ease;
 }
 
-form input[type="submit"]:hover {
+.botao1:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #161616, #353535);
 }
